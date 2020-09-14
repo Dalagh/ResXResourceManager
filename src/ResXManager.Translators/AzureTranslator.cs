@@ -20,7 +20,7 @@ namespace ResXManager.Translators
     [Export(typeof(ITranslator)), Shared]
     public class AzureTranslator : TranslatorBase
     {
-        private static readonly Uri _uri = new Uri("https://www.microsoft.com/en-us/translator/");
+        private static readonly Uri _uri = new Uri("https://api.cognitive.microsofttranslator.com/");
 
         // Azure has a 5000-character translation limit across all Texts in a single request
         private const int MaxCharsPerApiCall = 5000;
